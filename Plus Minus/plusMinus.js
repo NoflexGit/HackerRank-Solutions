@@ -9,8 +9,8 @@ const plusMinus = array => {
   const length = array.length;
 
   array.forEach(element => {
+    // Count only numbers
     if (typeof element === "number") {
-      // Count only numbers
       if (element < 0) {
         negative++;
       } else if (element > 0) {
