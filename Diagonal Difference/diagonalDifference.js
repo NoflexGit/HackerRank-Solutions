@@ -8,7 +8,7 @@ const diagonalDifference = matrix => {
     const matrixRow = matrix[row];
 
     // Addition of the each element of the secondary diagonal.
-    // Means we add files from the left side of each matrix row
+    // Means we add numbers from the left side of each matrix row
     // e.g. row[0][0] + row[1][1] + row[2][2] etc.
     primalDiagonalSum += matrixRow[row];
 
