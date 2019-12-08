@@ -9,10 +9,10 @@ const minMaxSum = array => {
   // e.g. [10, 23, 18, 24, 90] -> [10, 18, 23, 24, 90]
   array = array.sort((a, b) => a - b);
 
-  // Get sum of the elemnts without the first one [23, 18, 24, 90]
+  // Get a sum of the elements without the first one [23, 18, 24, 90]
   const start = countArray(array.slice(0, 4));
 
-  // Get sum of the elemnts without the last one [10, 23, 18, 24]
+  // Get a sum of the elements without the last one [10, 23, 18, 24]
   const end = countArray(array.slice(1));
 
   return `${start} ${end}`;
