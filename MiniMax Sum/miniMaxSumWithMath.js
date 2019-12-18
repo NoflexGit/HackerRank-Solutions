@@ -9,11 +9,11 @@ const minMaxSum = array => {
   // Count the sum of an array
   const sum = countArray(array);
 
-  // Get the min value of an array
-  const min = sum - Math.min(...array);
+  // Get the end value by substracting min value of the array from the array sum
+  const end = sum - Math.min(...array);
 
-  // Get the max value of an array
-  const max = sum - Math.max(...array);
+  // Get the start value by substracting max value of the array from the array sum
+  const start = sum - Math.max(...array);
 
-  return `${max min}`;
+  return `${start} ${end}`;
 };
